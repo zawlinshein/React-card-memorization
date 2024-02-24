@@ -11,7 +11,7 @@ export type CardType = {
 };
 
 export default function () {
-  const timeout = Infinity;
+  const timeout = 29;
 
   const [currentGameTheme, setCurrentGameTheme] = useState<{
     backgroundColor: string;
