@@ -42,7 +42,7 @@ export default function Card(props: Props) {
 
   return (
 
-    <div onAnimationEnd={e => console.log('animation end')} onAnimationEndCapture={e => console.log(e)} onAnimationStart={e => console.log("animation start")} onAnimationStartCapture={e => console.log(e)} ref={cardRef} style={{ transform: 'rotate(5deg)' }} className="flip-card "{...other}>
+    <div ref={cardRef} style={{ transform: 'rotate(5deg)' }} className="flip-card "{...other}>
       <div className="flip-card-inner" style={{ transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(5deg)' }}>
         <div className={`flip-card-front ${cardStyle}`}>
         </div>
